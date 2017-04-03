@@ -1,0 +1,23 @@
+{
+  "name": "fabalous-runtime-web-test",
+  "version": "1.0.0",
+  "description": "Test project for Runtime Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faba-network/fabalous-runtime-web-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Faba-network/fabalous-runtime-web-test/issues"
+  },
+  "homepage": "https://github.com/Faba-network/fabalous-runtime-web-test#readme",
+  "dependencies": {
+    "@fabalous/core": "^0.2.58",
+    "@fabalous/runtime-web": "^0.2.18"
+  }
+}
