@@ -19,5 +19,8 @@
   "dependencies": {
     "@fabalous/core": "^0.2.58",
     "@fabalous/runtime-web": "^0.2.18"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0"
   }
 }
