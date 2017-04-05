@@ -9,11 +9,9 @@ interface ITestViewProps{
 export default class TestView extends FabaWebBaseComponent<ITestViewProps>{
     constructor(props:ITestViewProps){
         super(props);
-        console.log(props);
     }
 
     render():React.ReactElement<ITestViewProps> {
-        console.log("render");
         return(
            <div>{this.props.msg}</div>
         )

@@ -18,9 +18,47 @@
   "homepage": "https://github.com/Faba-network/fabalous-runtime-web-test#readme",
   "dependencies": {
     "@fabalous/core": "^0.2.58",
-    "@fabalous/runtime-web": "^0.2.18"
+    "@fabalous/runtime-web": "^0.2.18",
+    "gulp-typedoc": "^2.0.2",
+    "@types/jest": "^19.2.2",
+    "jest": "^19.0.2",
+    "jest-cli": "^19.0.2",
+    "ts-jest": "^19.0.4",
+    "tslint": "^5.0.0",
+    "typedoc": "^0.5.9"
   },
   "devDependencies": {
-    "babel-core": "^6.24.0"
+    "babel-core": "^6.24.0",
+    "enzyme": "^2.8.0",
+    "jest-enzyme": "^3.0.0"
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.json"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/node_modules/jest-enzyme/lib/index.js",
+    "unmockedModulePathPatterns": [
+      "react",
+      "enzyme",
+      "jasmine-enzyme"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "test/.*\\Spec.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "!src/**/*.d.ts"
+    ],
+    "coverageReporters": [
+      "lcov"
+    ],
+    "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js"
   }
 }

@@ -5,10 +5,10 @@ import Store from "src/common/Store";
 import RootLayout from "src/common/RootLaylout";
 
 
-class T_Main extends FabaRuntimeWeb{
+class A_Web extends FabaRuntimeWeb{
     constructor(store, module){
         super(store, Routes, RootLayout, module);
     }
 }
 
-new T_Main(new FabaImmutableStore(new Store()), module);
+new A_Web(new FabaImmutableStore(new Store()), module);

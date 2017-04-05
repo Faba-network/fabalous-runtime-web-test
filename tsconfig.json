@@ -31,7 +31,7 @@
         "transpileModule": true,
         "forkChecker": true,
         "forkCheckerSilent": true,
-        "useBabel": true,
+        "useBabel": false,
         "useCache": false,
         "skipDeclarationFilesCheck": true
     },
